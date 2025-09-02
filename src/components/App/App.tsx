@@ -1,8 +1,8 @@
-// src/components/App/App.tsx
+
 
 import { useState } from 'react';
 import { type Votes, type VoteType } from '../../types/votes';
-import CafeInfo from '../CafeInfo/CafeInfo';
+import CafeInfo from '../cafeInfo/cafeInfo';
 import VoteOptions from '../VoteOptions/VoteOptions';
 import VoteStats from '../VoteStats/VoteStats';
 import Notification from '../Notification/Notification';
@@ -37,7 +37,7 @@ const App = () => {
       <VoteOptions
         onVote={handleVote}
         onReset={resetVotes}
-        // Передаємо canReset як результат обчислення
+        
         canReset={totalVotes > 0} 
       />
       {totalVotes > 0 ? (
