@@ -1,13 +1,13 @@
 import css from "./VoteOptions.module.css"
 import type { VoteType } from '../../types/votes';
 
-interface VoteOprionsProps{
+interface VoteOptionsProps{
   onVote: (type: VoteType) => void;
   onReset: () => void;
   canReset: boolean;
 }
 
-const VoteOptions=({ onVote, onReset, canReset }: VoteOprionsProps)=>{
+const VoteOptions=({ onVote, onReset, canReset }: VoteOptionsProps)=>{
   return  (<div className={css.container}>
 
   <button 
